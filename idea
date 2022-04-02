@@ -1,0 +1,55 @@
+tables
+	students
+	teachers
+	administrators
+	school
+	events
+
+school
+	id ; number
+	name ; string
+	location ; string
+
+student
+	name ; string
+	email ; string
+	password ; hashed string
+	first name ; string
+	last name ; string
+	school ; pull from school id
+
+teacher
+	name ; string
+	email ; string
+	password ; hashed string
+	first name ; string
+	last name ; string
+	school ; pull from school id
+	
+administrator
+	name ; string
+	email ; string
+	password ; hashed string
+	first name ; string
+	last name ; string
+	school ; pull from school id
+
+parent/guardian
+	name ; string
+	email ; string
+	password ; hashed string
+	first name ; string
+	last name ; string
+
+guardian-dependents
+	guardian id ; id
+	student id ; id
+
+event
+	title ; string
+	description ; string
+	date ; date
+	school; school-id
+	coordinator ; user-id
+
+
